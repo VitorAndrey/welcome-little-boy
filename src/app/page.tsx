@@ -39,7 +39,7 @@ export default function Home() {
             width={0}
             height={0}
             sizes="100vw"
-            className="absolute h-auto w-12 rotate-12 "
+            className="absolute bottom-8 right-8 h-auto w-12 rotate-12"
             alt={"Bear"}
           />
         </div>
@@ -50,15 +50,6 @@ export default function Home() {
           height={0}
           sizes="100vw"
           className="absolute right-0 top-8 h-auto w-12 -rotate-12"
-          alt={"Bear"}
-        />
-
-        <Image
-          src={cloud_img}
-          width={0}
-          height={0}
-          sizes="100vw"
-          className="absolute h-auto w-12 -rotate-12"
           alt={"Bear"}
         />
       </div>
