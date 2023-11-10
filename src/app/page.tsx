@@ -18,10 +18,39 @@ import {
 
 export default function Home() {
   return (
-    <main>
-      <h1 className={twMerge("text-3xl", itim.className)}>
-        Seja bem vindo Murillo!
-      </h1>
+    <main className="relative flex h-screen w-full items-center justify-center bg-theme-white">
+      <div className="relative h-[80%] w-[95%] max-w-md rounded-3xl bg-white p-7 shadow-lg">
+        <h1 className={twMerge("text-center text-2xl", itim.className)}>
+          Seja bem vindo Murillo!
+        </h1>
+
+        <Image
+          src={duck_img}
+          width={0}
+          height={0}
+          sizes="100vw"
+          className="absolute -left-4 -top-4 h-auto w-12 -rotate-12"
+          alt={"Bear"}
+        />
+
+        <Image
+          src={blocks_img}
+          width={0}
+          height={0}
+          sizes="100vw"
+          className="absolute h-auto w-12 -rotate-12"
+          alt={"Bear"}
+        />
+      </div>
+
+      <Image
+        src={cloud_img}
+        width={0}
+        height={0}
+        sizes="100vw"
+        className="absolute h-auto w-12 -rotate-12"
+        alt={"Bear"}
+      />
     </main>
   );
 }
