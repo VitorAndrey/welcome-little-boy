@@ -20,7 +20,7 @@ export default function Home() {
   return (
     <main className="relative flex h-screen w-full items-center justify-center bg-theme-white px-4">
       <div className="relative ml-4 h-[80%] w-[95%] max-w-sm rounded-3xl bg-theme-primary shadow-xl">
-        <div className="bg-whte absolute -left-4 -top-4  h-full w-full rounded-3xl bg-white p-7 shadow-xl">
+        <div className="bg-whte absolute -left-2 -top-2  h-full w-full rounded-3xl bg-white p-7 shadow-xl">
           <h1 className={twMerge("px-2 text-center text-2xl", itim.className)}>
             Seja bem vindo Murillo!
           </h1>
@@ -39,7 +39,7 @@ export default function Home() {
             width={0}
             height={0}
             sizes="100vw"
-            className="absolute h-auto w-12 rotate-12"
+            className="absolute h-auto w-12 rotate-12 "
             alt={"Bear"}
           />
         </div>
@@ -49,7 +49,7 @@ export default function Home() {
           width={0}
           height={0}
           sizes="100vw"
-          className="absolute left-20 top-8 h-auto w-12 -rotate-12"
+          className="absolute right-0 top-8 h-auto w-12 -rotate-12"
           alt={"Bear"}
         />
 
