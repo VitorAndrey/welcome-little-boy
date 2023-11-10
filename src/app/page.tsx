@@ -19,9 +19,9 @@ import {
 
 export default function Home() {
   return (
-    <main className="relative flex h-screen w-full items-center justify-center bg-theme-white px-4">
-      <div className="relative ml-4 h-[80%] w-[95%] max-w-sm rounded-3xl bg-theme-primary shadow-xl">
-        <div className="bg-whte absolute -left-2 -top-2  h-full w-full rounded-3xl bg-white px-12 py-7 shadow-xl">
+    <main className="relative flex min-h-screen w-full items-center justify-center bg-theme-white px-4">
+      <div className="relative ml-4 min-h-[550px] w-[95%] max-w-sm rounded-3xl bg-theme-primary shadow-xl">
+        <div className="bg-whte absolute -left-2 -top-2 flex min-h-[550px]  w-full flex-col rounded-3xl bg-white px-8 py-7 shadow-xl">
           <h1
             className={twMerge(
               "mb-10 px-2 text-center text-2xl",
@@ -32,7 +32,7 @@ export default function Home() {
           </h1>
 
           <p className="mb-4 text-sm">Eae, Kamilly?</p>
-          <p className="text-justify text-sm">
+          <p className="mb-8 flex-1 text-sm">
             Parabéns pela chegada do Murillo! Tenho certeza de que ele vai ser
             um garotinho incrível e cheio de energia. Desejo muita saúde, amor e
             todas as coisas boas do mundo para vocês. Que o Murillo cresça
@@ -40,7 +40,11 @@ export default function Home() {
             precisar, estamos aí!
           </p>
 
-          {/* <ReactAudioPlayer src="" autoPlay controls /> */}
+          <audio controls>
+            <source src="horse.ogg" type="audio/ogg" />
+            <source src="horse.mp3" type="audio/mpeg" />
+            Your browser does not support the audio element.
+          </audio>
 
           <Image
             src={duck_img}
@@ -56,7 +60,7 @@ export default function Home() {
             width={0}
             height={0}
             sizes="100vw"
-            className="absolute bottom-8 right-8 h-auto w-12 rotate-12"
+            className="absolute -right-5 bottom-8 h-auto w-12 rotate-12"
             alt={"Bear"}
           />
         </div>
