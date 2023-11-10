@@ -41,7 +41,7 @@ export default function Home() {
           </p>
 
           <audio controls className="w-full">
-            <source src="horse.mp3" type="audio/mpeg" />
+            <source src="/audio.mp3" type="audio/mpeg" />
           </audio>
 
           <Image
