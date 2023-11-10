@@ -19,7 +19,7 @@ import {
 
 export default function Home() {
   return (
-    <main className="relative flex min-h-screen w-full items-center justify-center bg-theme-white px-4">
+    <main className="relative flex min-h-screen w-full items-center justify-center overflow-x-hidden bg-theme-white px-4">
       <div className="relative ml-4 min-h-[550px] w-[95%] max-w-sm rounded-3xl bg-theme-primary shadow-xl">
         <div className="bg-whte absolute -left-2 -top-2 flex min-h-[550px]  w-full flex-col rounded-3xl bg-white px-8 py-7 shadow-xl">
           <h1
@@ -40,10 +40,8 @@ export default function Home() {
             precisar, estamos aí!
           </p>
 
-          <audio controls>
-            <source src="horse.ogg" type="audio/ogg" />
+          <audio controls className="w-full">
             <source src="horse.mp3" type="audio/mpeg" />
-            Your browser does not support the audio element.
           </audio>
 
           <Image
@@ -60,7 +58,7 @@ export default function Home() {
             width={0}
             height={0}
             sizes="100vw"
-            className="absolute -right-5 bottom-8 h-auto w-12 rotate-12"
+            className="absolute -right-6 bottom-8 h-auto w-8 rotate-12"
             alt={"Bear"}
           />
         </div>
